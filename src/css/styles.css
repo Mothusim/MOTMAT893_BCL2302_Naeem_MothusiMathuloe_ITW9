@@ -1,0 +1,865 @@
+/* Variables */
+
+:root {
+    --primary: #1F3A63;
+    --secondary: #ea4a384d;
+    --accent: #4CAF50;
+    
+}
+
+
+/* Reset */
+
+body, p, a, ul, li {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a, li {
+    list-style-type: none;
+    text-align: none;
+    color: white;
+}
+
+
+/* Base styles */
+
+body {
+    background-color: var(--primary);
+    overflow-x: hidden;
+    
+    background-image: url(/src/images/BGI.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#skills-section input:last-of-type {
+
+    background-color: #1F3A63;
+
+}
+
+#skills-section input:hover {
+
+    cursor: pointer;
+
+}
+
+nav ul li:hover {
+
+    background-color: #353542;
+    width: 15%;
+    border-radius: 10px;
+    transform: scale(1.2);
+    text-align: center;
+    padding: 0.1%;
+
+}
+
+input, textarea {
+
+    background: rgba(56, 11, 11, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    margin-bottom: 20px;
+
+}
+
+::placeholder{
+
+    color: black;
+    font-weight: bold;
+
+}
+
+textarea {
+
+    height: 10vh;
+
+}
+
+picture img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--secondary);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+#meteor-anime img{
+
+    width: 20px;
+    height: 30px;
+    transform: skew(15deg, 15deg);
+    border-radius: 100%;
+
+}
+
+.grid {
+
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid rgba(234, 74, 56, 0.2);
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 10px;
+
+}
+
+#footer-section img{
+
+    width: 25px;
+
+}
+
+
+/* layout */
+
+body {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 1px;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+nav {
+
+    grid-area: nav;
+
+    background-color: var(--secondary);
+    z-index: 2;
+    position: sticky;
+    top:0;
+
+}
+
+header {
+
+    grid-area: header;
+
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+main {
+
+    grid-area: main;
+
+    overflow-x: hidden;
+
+}
+
+footer {
+
+    grid-area: footer;
+
+    background-color: var(--secondary);
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+
+/* Fonts */
+
+h1 {
+
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+h2 {
+
+    font-size: 1.3em;
+    color: whitesmoke;
+
+}
+
+h3 {
+
+    font-size: 1em;
+    color: black;
+    background-color: rgb(199, 87, 87);
+    border-bottom: 2px solid rgba(234, 74, 56, 1)
+
+}
+
+p {
+
+    font-size: 0.8em;
+    color: rgb(248, 244, 244);
+    font-weight: normal;
+    z-index: 1;
+
+}
+
+footer .descriptions {
+
+    font-size: 0.4em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+}
+
+.items p {
+
+    line-height: 1.3em;
+
+}
+
+
+/* Animations */
+
+
+@keyframes shower {
+
+    0% {
+        transform: translateY(0);
+    opacity: 0;}
+
+    50% {opacity: 1}
+
+    70% {opacity: 1;}
+
+    100% {transform: translate(0vh, 62vh);
+    opacity: 0;}
+    
+}
+
+header #meteor-anime {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: relative;
+    bottom: 120%;
+    z-index: -1;
+
+}
+
+header #meteor-anime #meteor1 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    
+}
+header #meteor-anime #meteor2 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 7s;
+    animation-duration: 4s;
+}
+header #meteor-anime #meteor3 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 5s;
+    animation-duration: 3s;
+}
+header #meteor-anime #meteor4 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+header #meteor-anime #meteor5 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 2.5s;
+    animation-duration: 3s;
+}
+header #meteor-anime #meteor6 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 12.5s;
+    animation-duration: 3s;
+}
+header #meteor-anime  #meteor7 {
+    animation-name: shower;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 9s;
+    animation-duration: 3s;
+}
+
+
+ /*  Mobile */
+
+ header p:first-of-type {
+
+    color: rgba(234, 74, 56, 1);
+    font-size:larger;
+    font-weight: bolder;
+    margin-bottom: 10px;
+
+}
+
+header #descriptions-div p{
+
+    color:rgb(248, 244, 244);
+    font-size: small;
+    font-weight: normal;
+    padding: 0 40px;
+
+}
+
+ul {
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+#skills-section ul {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    background-color: rgba(15, 14, 14, 0.17);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#skills-section li {
+
+    text-decoration: none;
+
+}
+
+footer {
+
+padding: 20px;
+
+}
+
+.items {
+
+    width: 100%;
+    background-color: rgba(15, 14, 14, 0.17);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+input:focus {
+
+    background-color: rgba(15, 14, 14, 1);
+
+}
+
+textarea:focus {
+
+    background-color: rgba(15, 14, 14, 1);
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    margin:0 10%;
+
+}
+
+form input:last-of-type {
+
+    background-color: #353542;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+form input:last-of-type {
+
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    background-color: #1F3A63;
+    
+}
+
+
+/* Small tablets */
+
+@media screen and (min-width: 501px) {
+
+
+
+    form textarea {
+
+        margin: 2% 25% 4% 0;
+
+    }
+
+    form #first-two-inputs {
+
+        margin: 2% 50% 2% 0;
+
+    }
+
+    form input:last-of-type {
+
+        margin-right: 165px;
+
+    }
+
+    form {
+
+        margin-left: auto;
+
+    }
+
+    .grid {
+
+        padding-right: 15%;
+        padding-left: 15%;
+
+    }
+
+    .container {
+
+        margin-bottom: 20px;
+
+    }
+
+    .items {
+
+        height: 20vh;
+        padding-top: 20px;
+        margin-top: 20px;
+
+    }
+
+    #skills-section ul{
+
+        line-height: 2em;
+
+    }
+
+    #footer-section img{
+
+        width: 75%;
+    
+    }
+
+    header #descriptions-div p{
+
+        padding: 0 100px;
+    
+    }
+
+}
+
+
+
+/* Large tablets and laptops */
+
+@media screen and (min-width: 960px) {
+    
+    body {
+
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 0;
+        grid-template-areas:
+        "nav nav nav"
+        "header main main"
+        "header main main"
+        "footer footer footer";
+    }
+
+    nav {
+
+        background-color: rgb(199, 87, 87);
+
+    }
+
+    header {
+
+        padding-top: 50px;
+
+    }
+
+    header p:first-of-type {
+
+        margin-top: 40px;
+        font-size: 2em;
+
+    }
+
+    form input:last-of-type {
+
+        margin-right: 140px;
+
+    }
+
+    #skills-section ul{
+
+        line-height: 2em;
+
+    }
+
+    footer {
+
+        background-color: rgb(199, 87, 87, 0.1);
+        border-top: 2px solid rgb(199, 87, 87);
+
+    }
+
+    header #descriptions-div p{
+
+        padding: 0px 30px 0px 30px;
+        font-size: 1.2em;
+        text-align: left;
+    
+    }
+
+    @keyframes shower {
+
+        0% {
+            transform: translateY(0);
+        opacity: 0;}
+    
+        50% {opacity: 1}
+    
+        70% {opacity: 1;}
+    
+        100% {transform: translate(0, 250vh);
+        opacity: 0;}
+        
+    }
+    
+    header #meteor-anime {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        position: relative;
+        bottom: 70%;
+        z-index: -1;
+    
+    }
+    
+    header #meteor-anime #meteor1 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 5s;
+        animation-duration: 2s;
+        
+    }
+    header #meteor-anime #meteor2 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 7s;
+        animation-duration: 4s;
+    }
+    header #meteor-anime #meteor3 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 5s;
+        animation-duration: 3s;
+    }
+    header #meteor-anime #meteor4 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 5s;
+        animation-duration: 5s;
+    }
+    header #meteor-anime #meteor5 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 2.5s;
+        animation-duration: 3s;
+    }
+    header #meteor-anime #meteor6 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 12.5s;
+        animation-duration: 3s;
+    }
+    header #meteor-anime  #meteor7 {
+        animation-name: shower;
+        animation-iteration-count: infinite;
+        animation-direction: linear;
+        animation-delay: 9s;
+        animation-duration: 3s;
+    }
+
+}
+
+
+
+/* Large laptops */
+
+@media screen and (min-width: 1400px) {
+
+    /* Animations */
+
+    @keyframes shower {
+
+        0% {
+            transform: translateY(0);
+        opacity: 0;}
+    
+        50% {opacity: 1}
+    
+        70% {opacity: 1;}
+    
+        100% {transform: translate(0, 320vh);
+        opacity: 0;}
+        
+    }
+
+    nav {
+
+        height: 7vh;
+        font-size: 1.5em;
+
+    }
+
+    header #descriptions-div p{
+
+        padding: 20px 50px 50px 50px;
+        font-size: 1.4em;
+        text-align: left;
+    
+    }
+
+    .container {
+
+    column-gap: 50px;
+
+    }
+
+    .items {
+
+        width: 100%;
+        height: 30vh;
+        background-color: rgba(15, 14, 14, 0.17);
+        padding: 20px 50px 70px 50px;
+        border-radius: 20px; 
+        margin-top: 20px;
+    
+    }
+
+    h1 {
+
+        font-size: 4em;
+
+    }
+
+    h2 {
+
+        font-size: 2.5em;
+    }
+
+    h3 {
+
+        font-size: 2em;
+
+    }
+
+    p {
+
+        font-size: 1.5em;
+
+    }
+
+    form input:last-of-type {
+
+        margin-right: 200px;
+        width: 120px;
+        height: 55px;
+        border-radius: 40px;
+        font-size: 1.4em;
+
+    }
+
+    #skills-section ul {
+
+        line-height: 2em;
+        font-size: 1.5em;
+
+    }
+
+    #skills-section input:last-of-type {
+
+        width: 120px;
+        height: 50px;
+        font-size: 0.8em;
+        border-radius: 40px;
+        font-weight: bold;
+
+    }
+
+    footer .descriptions {
+
+        font-size: 0.8em;
+
+    }
+    
+}
+
+
+/* Desktops */
+
+@media screen and (min-width: 2500px) {
+
+    nav {
+
+        font-size: 4em;
+        padding-top: 1em;
+
+    }
+
+    picture img {
+
+        width: 600px;
+        height: 600px;
+        margin-top: 100px;
+
+    }
+
+    header #descriptions-div p{
+
+        padding: 40px 90px;
+        font-size: 2em;
+        text-align: left;
+    
+    }
+
+    .items {
+
+
+        height: 25vh;
+        
+
+    }
+
+    h1 {
+
+        font-size: 7em;
+
+    }
+
+    h2 {
+
+        font-size: 5em;
+    }
+
+    h3 {
+
+        font-size: 4em;
+
+    }
+
+    p {
+
+        font-size: 3em;
+
+    }
+
+    #skills-section ul {
+
+        line-height: 2em;
+        font-size: 3em;
+
+    }
+
+    footer .descriptions {
+
+        font-size: 1.5em;
+
+    }
+
+    form input, textarea {
+
+        font-weight: normal;
+        font-size: 3em;
+
+    }
+
+    #footer-section img{
+
+        width: 6em;
+    
+    }
+
+    header p:first-of-type {
+
+        color: rgba(234, 74, 56, 1);
+        font-size: 3.5em;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    
+    }
+
+    header #descriptions-div p{
+
+        color:rgb(248, 244, 244);
+        font-size: 2em;
+        font-weight: normal;
+        margin-top: 40px;
+    
+    }
+
+    #skills-section input:last-of-type {
+
+        width: 220px;
+        height: 100px;
+        font-size: 0.8em;
+        border-radius: 60px;
+        font-weight: bold;
+
+    }
+
+    form input:last-of-type {
+
+        margin-right: 340px;
+        width: 230px;
+        height: 110px;
+        border-radius: 60px;
+        font-size: 2.5em;
+        font-weight: bold;
+
+    }
+
+}

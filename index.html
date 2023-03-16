@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+
+</head>
+
+<body>
+    
+    <!-- Nav -->
+
+    <nav>
+
+        <!-- Nav Menu -->
+
+        <ul>
+
+            <li><a href="#education-section">Education</a></li>
+            <li><a href="#experience-section">Experience</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contacts</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+
+    <header>
+
+        <picture>
+
+            <source srcset="/src/images/image-face.jpg" media="(max-width: 500px)">
+
+            <source srcset="/src/images/image-h-and-shoulder.jpg" media="(max-width: 900px)">
+
+            <img src="/src/images/Image-normal.jpg" alt="picture">
+
+        </picture>
+
+        <h1>Mothusi Mathuloe</h1>
+
+        <p>Junior Web Developer</p>
+
+        <!-- Introductory statement -->
+
+        <div id="descriptions-div">
+
+            <p class="descriptions"> 
+                
+                I believe that my diverse set of skills and experience make me an excellent candidate for the Junior Web Developer position at your company. 
+                I am eager to apply my knowledge and skills to contribute to your team's success.
+            </p>
+
+        </div>
+
+        <!-- Animation image div -->
+
+        <div id="meteor-anime">
+
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor1">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor2">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor3">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor4">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor5">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor6">
+            <img src="/src/images/Meteor-in-night-sky.jpg" alt="meteor" id="meteor7">
+
+        </div>
+
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Education section -->
+
+        <section id="education-section" class="grid">
+
+            <h2>Education</h2>
+
+            <!-- education container -->
+
+            <div class="container">
+
+                <div class="education-item items">
+
+                    <h3>Lebone 2 College</h3>
+
+                    <p>2015-2015</p><br>
+
+                    <p>Completed RBI 13th year programme</p>
+
+                </div>
+
+                <div class="education-item items">
+
+                    <h3>Codespace Academy</h3>
+
+                    <p>2022-2022</p><br>
+
+                    <p>completed Intro to Web Development course</p>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <!-- Experience section -->
+
+        <section id="experience-section" class="grid">
+
+            <h2>Experience</h2>
+
+            <!-- experience container -->
+
+            <div class="container">
+
+                <div class="experience-item items">
+
+                    <h3>XM markets</h3>
+
+                    <p>2021-present</p><br>
+
+                    <p>Title: Trader</p>
+
+                </div>
+
+                <div class="experience-item items">
+
+                    <h3>Khepri Holdings</h3>
+
+                    <p>2023-present</p><br>
+
+                    <p>Title: CEO</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills section -->
+
+        <section id="skills-section" class="grid">
+
+            <h2>Skills</h2>
+
+            <!-- skills div -->
+
+            <ul>
+                    
+                <li>Trading</li>
+                <li>Business management</li>
+                <li>Web development</li>
+                <li>UI/XD</li>
+                
+                <li><input onclick="window.open('/more-info.html')" type="button" value="More info">
+
+            </ul>
+
+            <!-- softwares & tools div -->
+
+            <h2>Softwares & tools</h2>
+
+            <ul>
+
+                <li>VS Code</li>
+                <li>Gitub</li>
+                <li>Scratch 3.0</li>
+                <li>Figma</li>
+
+                <li><input onclick="window.open('/more-info.html')" type="button" value="More info">
+
+            </ul>
+
+        </section>
+
+        <!-- Contact section -->
+
+        <section id="contact-section" class="grid">
+
+            <h2>Get in touch</h2>
+
+            <!-- Form -->
+    
+            <form action="https://formsubmit.co/atumg@protonmail.com" method="POST" target="_blank">
+    
+                <input id="first-two-inputs" type="text" placeholder="Enter your name..." required>
+    
+                <input id="first-two-inputs" type="email" placeholder="Enter your email..." required>
+    
+                <textarea placeholder="Write your message here..." required></textarea>
+    
+                <input type="submit" value="submit">
+    
+            </form>
+    
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div id="footer-section">
+
+            <h2>Visit my pages</h2>
+
+            <ul>
+
+                <li><a href="https://www.linkedin.com/in/mothusi-mathuloe-926542104/" target="_blank"><img src="/src/images/linkedin-icon.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/dyknow001/" target="_blank"><img src="/src/images/insta-icon.svg" alt="Instagram"></a></li>
+                <li><a href="https://github.com/Mothusim" target="_blank"><img src="/src/images/git-icon.svg" alt="Github"></a></li>
+                <li><img src="/src/images/telephone.png" alt="Cell No" style="width: 25px" title="0730609330"></li>
+                <li><img src="/src/images/gmail.png" alt="Email" style="width: 25px" title="mothusim97@gmail.com"></li>
+
+            </ul>
+
+            <p class="descriptions">Copyright 2023 Mothusi Mathuloe</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
