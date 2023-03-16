@@ -4,7 +4,7 @@ https://www.figma.com/file/u2E0okJIAXPuePvdhZwyOk/ITW_Figma-Resume-Templates-(Co
 
 Author: Mothusi Mathuloe.
 
-Description of the project: This a resume.
+Description of the project: This is a resume.
 
 Resources: VS Code.
 
